@@ -1,6 +1,12 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import AceEditor from "react-ace";
+
 import "./App.scss";
+import "ace-builds/src-noconflict/mode-markdown";
+import "ace-builds/src-noconflict/theme-github";
+import "ace-builds/src-noconflict/ext-language_tools";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -49,7 +55,17 @@ function App() {
           </a>
         </div>
         <div className="editor">
-          <textarea className="editor-textarea" />
+          <AceEditor
+            name="text-editor"
+            placeholder="Placeholder Text"
+            mode="markdown"
+            theme="github"
+            fontSize={14}
+            showPrintMargin={true}
+            showGutter={true}
+            highlightActiveLine={true}
+            value={`# this is a sample heading`}
+          />
         </div>
         <div className="preview">
           <div className="preview-content"></div>

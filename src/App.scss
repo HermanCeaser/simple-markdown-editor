@@ -28,6 +28,12 @@
   }
 }
 
+
+#text-editor {
+  width: auto !important;
+  min-height: calc(100vh - 20vh) !important ;
+}
+
 .App {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
