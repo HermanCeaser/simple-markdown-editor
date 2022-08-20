@@ -1,0 +1,41 @@
+.navbar {
+  grid-area: navbar;
+}
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  border-top: 1px solid #e6e6e6;
+
+  .editor-header {
+    padding: .75rem;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    //change the right border of the .editor-header
+    &:first-child {
+      border-right: 1px solid #e6e6e6;
+    }
+  }
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navbar"
+    "header"
+    "main";
+}
+
