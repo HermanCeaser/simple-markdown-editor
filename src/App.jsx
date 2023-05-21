@@ -1,4 +1,4 @@
-import "./App.scss";
+
 import MarkdownEditor from "./components/MarkdownEditor";
 
 

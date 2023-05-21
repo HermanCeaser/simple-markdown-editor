@@ -1,6 +1,7 @@
 .navbar {
   grid-area: navbar;
 }
+
 .header {
   grid-area: header;
 }
@@ -29,23 +30,34 @@
 
   .editor {
     border-right: 1px solid #e6e6e6;
+
   }
 
   .preview {
-    padding: .75rem;
-    overflow-y: scroll;
+    padding: 0 !important;
     border-right: 1px solid #e6e6e6;
 
-  }
+    .preview-content {
+      padding: 1rem;
+      width: auto;
+      overflow-y: scroll;
 
+      .prose {
+        max-height: calc(100vh - 20vh) !important;
+        max-width: 100%;
+      }
+    }
+  }
 
 }
 
-
 #text-editor {
   width: auto !important;
-  min-height: calc(100vh - 20vh) !important ;
-  // border-right: 1px solid #e6e6e6;
+  min-height: calc(100vh - 20vh) !important;
+  border-right: 1px solid #e6e6e6;
+  overflow-y: scroll;
+  // Make the height as long as the preview
+  // height: 100% !important;
 }
 
 .App {
@@ -58,4 +70,3 @@
     "header"
     "main";
 }
-

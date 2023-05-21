@@ -5,7 +5,7 @@ import remarkGfm from "remark-gfm";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-// import "./App.scss";
+import './MardownEditor.scss';
 import "ace-builds/src-noconflict/mode-markdown";
 import "ace-builds/src-noconflict/theme-github";
 import "ace-builds/src-noconflict/ext-language_tools";
@@ -82,8 +82,9 @@ const MarkdownEditor = () => {
                         />
                     </div>
                     <div className="preview">
-                        <div className="preview-content prose">
-                            <ReactMarkdown
+                        <div className="preview-content">
+                            <ReactMarkdown                                
+                                className="prose"
                                 children={markdown}
                                 remarkPlugins={[remarkGfm]}
                                 components={{
