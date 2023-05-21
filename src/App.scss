@@ -26,12 +26,26 @@
       border-right: 1px solid #e6e6e6;
     }
   }
+
+  .editor {
+    border-right: 1px solid #e6e6e6;
+  }
+
+  .preview {
+    padding: .75rem;
+    overflow-y: scroll;
+    border-right: 1px solid #e6e6e6;
+
+  }
+
+
 }
 
 
 #text-editor {
   width: auto !important;
   min-height: calc(100vh - 20vh) !important ;
+  // border-right: 1px solid #e6e6e6;
 }
 
 .App {
