@@ -30,20 +30,21 @@
 
   .editor {
     border-right: 1px solid #e6e6e6;
+    margin-bottom: 16px;
 
   }
 
-  .preview {
+  .preview-wrapper{
     padding: 0 !important;
-    border-right: 1px solid #e6e6e6;
-
     .preview-content {
       padding: 1rem;
+      padding-bottom: 0;
+      margin-bottom: 16px;
       width: auto;
       overflow-y: scroll;
 
       .prose {
-        max-height: calc(100vh - 20vh) !important;
+        max-height: calc(100vh - 24vh) !important;
         max-width: 100%;
       }
     }
